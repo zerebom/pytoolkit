@@ -45,7 +45,7 @@ class KfoldlgbPredictor(object):
     """
 
     def __init__(self, n_split, train_X, train_y, test_X=None, steps=None):
-        self.skf = StratifiedKFold(n_split=n_split)
+        self.skf = StratifiedKFold(n_splits=n_split)
         self.train_X = train_X
         self.train_y = train_y
         self.test_X = test_X
